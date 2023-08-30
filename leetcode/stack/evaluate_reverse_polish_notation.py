@@ -5,7 +5,7 @@ https://leetcode.com/problems/evaluate-reverse-polish-notation/
 """
 
 
-def evalRPN(self, tokens: list[str]) -> int:
+def evalRPN(tokens: list[str]) -> int:
     """
     - Stack problem
     - Time complexity: O(n) - n is the number of tokens
