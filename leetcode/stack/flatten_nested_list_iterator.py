@@ -7,6 +7,8 @@ https://leetcode.com/problems/flatten-nested-list-iterator/
 #
 """
 
+from collections import deque
+
 
 class NestedInteger:
     def isInteger(self) -> bool:
@@ -20,7 +22,7 @@ class NestedInteger:
         Return None if this NestedInteger holds a nested list
         """
 
-    def getList(self) -> [NestedInteger]:
+    def getList(self) -> ['NestedInteger']:
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -29,13 +31,22 @@ class NestedInteger:
 
 class NestedIterator:
     def __init__(self, nestedList: [NestedInteger]):
-        NotImplemented
+        self.queue = self.build_queue(nestedList)
 
     def next(self) -> int:
-        NotImplemented
+        return self.queue.popleft()
 
     def hasNext(self) -> bool:
-        NotImplemented
+        return bool(self.queue)
+
+    def build_queue(self, nestedList: [NestedInteger]):
+        queue = deque()
+        for item in nestedList:
+            if item.isInteger():
+                queue.append(item.getInteger())
+            else:
+                queue.extend(self.build_queue(item.getList()))
+        return queue
 
 
 # Your NestedIterator object will be instantiated and called as such:
