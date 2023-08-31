@@ -26,7 +26,7 @@ def calculate(s: str) -> int:
           numbers in the current parenthesis and the index of the closing parenthesis
         - At the end, add the last number to the stack based on the previous operator
         - Return the sum of the numbers in the stack
-
+    - This forms the basis of Basic Calculator II and III
     """
     def solve(s, l, r):
         num_stack, op = [], '+'
