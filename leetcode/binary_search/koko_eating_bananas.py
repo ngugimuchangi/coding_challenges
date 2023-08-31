@@ -24,9 +24,6 @@ def minEatingSpeed(piles: List[int], h: int) -> int:
           h, then move to the left half of the search space to look for a higher speed
           that can be used to eat all the bananas in h hours
         - At the end, return the min speed, when l > r
-        
-            
-        
     """
 
     l, r, min_speed, = 1, max_pile, max_pile
