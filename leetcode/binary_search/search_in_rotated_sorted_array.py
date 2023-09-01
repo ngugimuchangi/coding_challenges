@@ -7,6 +7,21 @@ from typing import List
 
 
 def search(nums: List[int], target: int) -> int:
+    """
+    - Binary search problem
+    - Time: O(logn) - binary search
+    - Space: O(1) - constant space
+    - Algorithm:
+        - Find mid
+        - If mid is the target, return mid
+        - If left is less than mid, then left to mid is sorted
+            - If target is between left and mid, then search in left to mid
+            - Else search in mid + 1 to right
+        - Else right to mid is sorted
+            - If target is between mid and right, then search in mid + 1 to right
+            - Else search in left to mid
+    - This forms the basis of Search in Rotated Sorted Array II
+    """
     l, r = 0, len(nums) - 1
 
     while l <= r:
