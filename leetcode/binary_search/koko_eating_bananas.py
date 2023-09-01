@@ -4,12 +4,11 @@ Leetcode 875. Koko Eating Bananas
 https://leetcode.com/problems/koko-eating-bananas/
 """
 
-from typing import List
 import math
+from typing import List
 
 
 def minEatingSpeed(piles: List[int], h: int) -> int:
-    max_pile = max(piles)
     """
     - Binary search problem
     - Time: O(nlog(p)) - n is the number of piles, p is the max pile
@@ -25,7 +24,7 @@ def minEatingSpeed(piles: List[int], h: int) -> int:
           that can be used to eat all the bananas in h hours
         - At the end, return the min speed, when l > r
     """
-
+    max_pile = max(piles)
     l, r, min_speed, = 1, max_pile, max_pile
 
     while l <= r:
