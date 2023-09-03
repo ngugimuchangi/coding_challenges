@@ -5,16 +5,7 @@ https://leetcode.com/problems/palindrome-linked-list/
 
 """
 from typing import Optional
-
-
-class ListNode:
-    """
-    Linked list node
-    """
-
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from list_node import ListNode
 
 
 class Solution:
