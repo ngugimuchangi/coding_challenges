@@ -37,5 +37,4 @@ def calculate(s: str) -> int:
             else:
                 op_stack.append(int(op_stack.pop() / num))
             op, num = c, 0
-    print(op_stack)
     return sum(op_stack)
