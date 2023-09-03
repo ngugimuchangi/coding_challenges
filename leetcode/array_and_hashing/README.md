@@ -6,3 +6,6 @@
 4. [Top K Frequent Elements](top_k_frequent_elements.py)
 5. [Two Sum](two_sum.py)
 6. [Valid Anagram](valid_anagram.py)
+7. [Valid Sudoku](valid_sudoku.py)
+8. [Longest Consecutive Sequence](longest_consecutive_sequence.py)
+9. [Product of Array Except Self](product_of_array_except_self.py)
