@@ -42,7 +42,7 @@ def trap(height: List[int]) -> int:
     return water_units
 
 
-def trapTwo(self, height: List[int]) -> int:
+def trapTwo(height: List[int]) -> int:
     """
     Time complexity: O(n) - linear time to go through each boundary
     Space complexity: O(n) - additional list of max heights
