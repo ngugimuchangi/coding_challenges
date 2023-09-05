@@ -11,3 +11,6 @@
 9. [Swapping Nodes in a Linked List](swapping_nodes_in_a_linked_list.py)
 10. [LRU Cache](lru_cache.py)
 11. [Find Duplicate](find_duplicate.py)
+12. [Linked List Cycle II](linked_list_cycle_ii.py)
+13. [Merge k Sorted Lists](merge_k_sorted_lists.py)
+14. [Reverse Nodes in k-Group](reverse_nodes_in_k_group.py)
