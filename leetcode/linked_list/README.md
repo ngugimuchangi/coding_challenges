@@ -14,3 +14,5 @@
 12. [Linked List Cycle II](linked_list_cycle_ii.py)
 13. [Merge k Sorted Lists](merge_k_sorted_lists.py)
 14. [Reverse Nodes in k-Group](reverse_nodes_in_k_group.py)
+15. [Reverse Linked List II](reverse_linked_list_ii.py)
+16. [Split Linked List in Parts](split_linked_list_in_parts.py)
