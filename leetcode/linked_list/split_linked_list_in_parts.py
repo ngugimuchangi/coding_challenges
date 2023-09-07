@@ -7,7 +7,7 @@ from typing import Optional, List
 from list_node import ListNode
 
 
-def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:
+def splitListToParts(head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:
     """
     - Time complexity: O(n)
     - Space complexity: O(1)

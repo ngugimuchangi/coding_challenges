@@ -7,7 +7,7 @@ from typing import Optional
 from list_node import ListNode
 
 
-def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+def reverseBetween(head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
     """
     - Time complexity: O(n)
     - Space complexity: O(1)
