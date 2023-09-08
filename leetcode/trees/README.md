@@ -15,3 +15,5 @@
 13. [Kth Smallest Element in a BST](kth_smallest_element_in_a_bst.py)
 14. [Binary Tree Maximum Path Sum](binary_tree_maximum_path_sum.py)
 15. [Serialize and Deserialize Binary Tree](serialize_and_deserialize_binary_tree.py)
+16. [Flip Equivalent Binary Trees](flip_equivalent_binary_trees.py)
+17. [Amount of Time for Binary Tree to Be Infected](amount_of_time_for_binary_tree_to_be_infected.py)
