@@ -9,3 +9,4 @@
 7. [Valid Sudoku](valid_sudoku.py)
 8. [Longest Consecutive Sequence](longest_consecutive_sequence.py)
 9. [Product of Array Except Self](product_of_array_except_self.py)
+10. [Heaters](heaters.py)
