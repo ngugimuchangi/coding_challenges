@@ -3,7 +3,6 @@ Leetcode 475: Heaters
 https://leetcode.com/problems/heaters/
 """
 
-
 from typing import List
 
 
