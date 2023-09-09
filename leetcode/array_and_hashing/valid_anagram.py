@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Leetcode 242: Valid Anagram
 https://leetcode.com/problems/valid-anagram/description/

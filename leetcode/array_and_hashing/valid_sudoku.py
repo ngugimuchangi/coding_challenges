@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Leetcode 36: Valid Sudoku
 https://leetcode.com/problems/valid-sudoku/description/

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Leetcode 2483: Minimal Penalty for a Shop
 https://leetcode.com/problems/minimum-penalty-for-a-shop/description/
