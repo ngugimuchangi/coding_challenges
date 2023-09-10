@@ -6,3 +6,4 @@
 4. [Word Break](word_break.py)
 5. [Word Break II](word_break_ii.py)
 6. [Count All Valid Pickup and Delivery Options](count_all_valid_pickup_and_delivery_options.py)
+7. [Coin Change](coin_change.py)
