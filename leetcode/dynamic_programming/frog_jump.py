@@ -51,15 +51,17 @@ def canCrossNextTwo(stones: List[int]) -> bool:
             return False
         if stone == stones[-1]:
             return True
+        can_cross = False
         for i in range(k - 1, k + 2):
-            can_cross = canCrossNext(stone + i, i, memo)
+            if i > 0:
+                can_cross |= canCrossNext(stone + i, i, memo)
             if can_cross:
                 memo[(stone, k)] = True
                 return True
         memo[(stone, k)] = False
         return False
 
-    return False if stones[1] - stones[0] > 1 else canCrossNext(stones[1], 1)
+    return canCrossNext(stones[0], 0)
 
 
 def canCrossTabulation(stones: List[int]) -> bool:
@@ -76,13 +78,11 @@ def canCrossTabulation(stones: List[int]) -> bool:
           to jump to the current stone
         - Return the value of the last stone in the table
     """
-    if stones[1] - stones[0] > 1:
-        return False
     lookup = {stone: i for i, stone in enumerate(stones)}
     table = [False] * len(stones)
     steps = [set() for _ in range(len(stones))]
-    table[1] = True
-    steps[1].add(1)
+    table[0] = True
+    steps[0].add(0)
     for i in range(1, len(table)):
         if not table[i]:
             continue
