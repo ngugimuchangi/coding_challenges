@@ -60,3 +60,37 @@ def canCrossNextTwo(stones: List[int]) -> bool:
         return False
 
     return False if stones[1] - stones[0] > 1 else canCrossNext(stones[1], 1)
+
+
+def canCrossTabulation(stones: List[int]) -> bool:
+    """
+    - Dynamic programming problem
+    - Time complexity: O(n^3) - n is the maximum number of stones
+    - Space complexity: O(n)
+    - Approach: Dynamic programming - Tabulation
+        - Use a table to store the possible jumps from each stone
+        - The possible jumps from a stone is the union of the possible jumps
+            from the previous stones that can reach the current stone
+        - Use a set to store the possible jumps from each stone
+        - Check if the next stone is reachable from the current stone, if the frog was able
+          to jump to the current stone
+        - Return the value of the last stone in the table
+    """
+    if stones[1] - stones[0] > 1:
+        return False
+    lookup = {stone: i for i, stone in enumerate(stones)}
+    table = [False] * len(stones)
+    steps = [set() for _ in range(len(stones))]
+    table[1] = True
+    steps[1].add(1)
+    for i in range(1, len(table)):
+        if not table[i]:
+            continue
+        for step in steps[i]:
+            for k in range(step - 1, step + 2):
+                stone = stones[i] + k
+                if not k or stone not in lookup:
+                    continue
+                table[lookup[stone]] = True
+                steps[lookup[stone]].add(k)
+    return table[-1]
