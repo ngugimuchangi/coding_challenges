@@ -34,8 +34,9 @@ def canCross(stones: List[int]) -> bool:
 def canCrossNextTwo(stones: List[int]) -> bool:
     """
     - Dynamic programming problem
-    - Time complexity: O(n^3) - n is the maximum number of stones
-    - Space complexity: O(n)
+    - Time complexity: O(n^2) - n is the maximum number of stones
+    - Space complexity: O(n^2) - n is the maximum number of stones
+        - represents number of keys in the memo
     - Approach: Dynamic programming - Memoization
         - Use a dictionary to store the possible jumps from each stone
         - The key is the stone and the value is a set of possible jumps
@@ -67,8 +68,8 @@ def canCrossNextTwo(stones: List[int]) -> bool:
 def canCrossTabulation(stones: List[int]) -> bool:
     """
     - Dynamic programming problem
-    - Time complexity: O(n^3) - n is the maximum number of stones
-    - Space complexity: O(n)
+    - Time complexity: O(n^2) - n is the maximum number of stones
+    - Space complexity: O(n ^ 2)
     - Approach: Dynamic programming - Tabulation
         - Use a table to store the possible jumps from each stone
         - The possible jumps from a stone is the union of the possible jumps
