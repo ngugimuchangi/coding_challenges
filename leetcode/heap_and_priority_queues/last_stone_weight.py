@@ -8,8 +8,11 @@ from typing import List
 
 def lastStoneWeight(stones: List[int]) -> int:
     """
-    Time: O(nlogn) - heapify is O(nlogn) and each heappop is O(logn)
-    Space: O(n)
+    Time: O(nlogn)
+        - heapify is O(n) and each heappop is O(logn)
+        - There are n heappops in the worst case.
+          Therefore, O(nlogn)
+    Space: O(1)
     Approach: Use a max heap to keep track of the largest stones.
         - Pop the two largest stones from the heap.
         - If the two stones are not equal, add the difference back to the heap.
