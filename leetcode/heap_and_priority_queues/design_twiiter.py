@@ -4,17 +4,17 @@ https://leetcode.com/problems/design-twitter/
 
 Analysis:
 1. postTweet
-    - Time complexity: O(1)
-    - Space complexity: O(1)
+- Time complexity: O(1)
+- Space complexity: O(1)
 2. getNewsFeed
-    - Time complexity: O(n(log(n))
-        - n is the number of tweets in the user's feed
-        - n(log(n)) is the time complexity of the merge sort
-        - Alternatively, we can use a heap to store the tweets
-            and retrieve the top 10 tweets in O(log(k)) time
-            where k is the number of tweets in the heap, which
-            depends on the number of followees a user has.
-    - Space complexity: O(n)
+- Time complexity: O(n(log(n))
+    - n is the number of tweets in the user's feed
+    - n(log(n)) is the time complexity of the merge sort
+    - Alternatively, we can use a heap to store the tweets
+        and retrieve the top 10 tweets in O(log(k)) time
+        where k is the number of tweets in the heap, which
+        depends on the number of followees a user has.
+- Space complexity: O(n)
 3. follow
     - Time complexity: O(1)
     - Space complexity: O(1)
@@ -51,16 +51,13 @@ class Twitter:
         self.tweet_count = 0
 
     def postTweet(self, userId: int, tweetId: int) -> None:
-        """ Add the tweet to the user's tweets list """
+        """ Post new tweet """
         user = self.get_user(userId)
         self.tweet_count += 1
         user.tweets.appendleft((self.tweet_count, tweetId))
 
     def getNewsFeed(self, userId: int) -> List[int]:
-        """
-        Generates a feed of the top 10 tweets from the user
-        and their followees
-        """
+        """ Get top ten recent tweets from user and followers """
 
         user = self.get_user(userId)
         feed = user.tweets
@@ -71,17 +68,17 @@ class Twitter:
         return top_tweets[:self.MAX_FEED]
 
     def follow(self, followerId: int, followeeId: int) -> None:
-        """ Follow a user """
+        """ Follow user """
         follower = self.get_user(followerId)
         follower.followees.add(followeeId)
 
     def unfollow(self, followerId: int, followeeId: int) -> None:
-        """ Unfollow a user """
+        """ Unfollow user """
         user = self.get_user(followerId)
         user.followees.discard(followeeId)
 
     def get_user(self, id: int) -> User:
-        """ Get a user from the user's dictionary """
+        """" Get user or create one if they don't exist """
         if id not in self.users:
             self.users[id] = User(id)
         return self.users[id]
