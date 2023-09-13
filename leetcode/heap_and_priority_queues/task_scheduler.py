@@ -1,3 +1,8 @@
+"""
+Leetcode 621: Task Scheduler
+https://leetcode.com/problems/task-scheduler/
+TODO: Reimplement solution with greedy algorithm
+"""
 from typing import List
 from collections import Counter, deque
 from heapq import heapify, heappop, heappush
@@ -9,9 +14,10 @@ def leastInterval(tasks: List[str], n: int) -> int:
         - m is the number of tasks
         - n is the cooling period
     - Space complexity: O(n)
-    - Approach: Min heap
-        - We can use a min heap to keep track of the remaining tasks
-        - We can initialize the min heap with the frequency of each task
+    - Approach: Max heap
+        - We can use a max heap to keep track of the remaining tasks
+        - We can initialize the max heap with the frequency of each task
+        - We process task with highest frequency first - greedy
         - We use a queue to keep track of the tasks that are waiting to be
           executed - idle_queue
         - We iterate over the min heap and pop the root task of the heap
