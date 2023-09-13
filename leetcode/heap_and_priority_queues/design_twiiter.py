@@ -31,8 +31,10 @@ from typing import List
 
 
 class User:
+    """ Twitter user class """
+
     def __init__(self, id: int):
-        """ Instantiate a User object """
+        """ Instantiate new user object """
         self.id = id
         self.tweets = deque()
         self.followees = set()
