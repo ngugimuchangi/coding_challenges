@@ -6,3 +6,4 @@
 4. [Last Stone Weight](last_stone_weight.py)
 5. [Task Scheduler](task_scheduler.py)
 6. [Design Twitter](design_twitter.py)
+7. [Find Median from Data Stream](find_median_from_data_stream.py)
