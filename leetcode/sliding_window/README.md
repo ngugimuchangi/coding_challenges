@@ -7,5 +7,3 @@
 5. [Minimum window substring](minimum_window_substring.py)
 6. [Permutation in string](permutation_in_string.py)
 7. [Sliding window maximum](sliding_window_maximum.py)
-8. [Sliding window median](sliding_window_median.py)
-9. [Kth Smallest Element in a Sorted Matrix](kth_smallest_element_in_a_sorted_matrix.py)
