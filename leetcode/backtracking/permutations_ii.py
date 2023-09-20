@@ -25,7 +25,7 @@ from collections import defaultdict
 from typing import List
 
 
-def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+def permuteUnique(nums: List[int]) -> List[List[int]]:
     res, visited, max_count = [], defaultdict(set), len(nums)
     nums.sort()
 
