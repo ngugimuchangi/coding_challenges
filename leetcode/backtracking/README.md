@@ -5,3 +5,6 @@
 3. [Combination Sum](combination_sum.py)
 4. [Combination Sum II](combination_sum_ii.py)
 5. [Combination Sum III](combination_sum_iii.py)
+6. [Subsets](subsets.py)
+7. [Subsets II](subsets_ii.py)
+8. [Permutations](permutations.py)
