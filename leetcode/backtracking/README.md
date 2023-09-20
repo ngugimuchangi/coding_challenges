@@ -2,3 +2,6 @@
 
 1. [Letter Combinations of a Phone Number](letter_combinations_of_a_phone.py)
 2. [Maximum Length of a Concatenated String with Unique Characters](maximum_length_of_a_concatenated_string_with_unique_characters.py)
+3. [Combination Sum](combination_sum.py)
+4. [Combination Sum II](combination_sum_ii.py)
+5. [Combination Sum III](combination_sum_iii.py)
