@@ -9,3 +9,6 @@
 7. [Subsets II](subsets_ii.py)
 8. [Permutations](permutations.py)
 9. [Permutations II](permutations_ii.py)
+10. [Palindrome Partitioning](palindrome_partitioning.py)
+11. [Word Search](word_search.py)
+12. [N-Queens](n_queens.py)
