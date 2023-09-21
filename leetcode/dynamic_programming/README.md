@@ -8,3 +8,5 @@
 6. [Count All Valid Pickup and Delivery Options](count_all_valid_pickup_and_delivery_options.py)
 7. [Coin Change](coin_change.py)
 8. [Unique Paths](unique_paths.py)
+9. [Climbing Stairs](climbing_stairs.py)
+10. [Min Cost Climbing Stairs](min_cost_climbing_stairs.py)
