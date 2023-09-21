@@ -24,7 +24,7 @@ def minCostClimbingStairs(cost: List[int]) -> int:
         if i == top:
             return 0
         if i > top:
-            return float('inf')
+            return 1
         memo[i] = cost[i] + min(solution(i + 1), solution(i + 2))
         return memo[i]
     solution(0)
