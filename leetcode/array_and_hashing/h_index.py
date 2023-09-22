@@ -14,14 +14,13 @@ from typing import List
 
 def hIndex(citations: List[int]) -> int:
     max_citation = max(citations)
-    count = [0] * (max_citation + 1)
+    count = [0] * (max_citation + 2)
 
     for citation in citations:
         count[citation] += 1
 
     for i in range(max_citation, -1, -1):
-        if i < max_citation:
-            count[i] += count[i + 1]
+        count[i] += count[i + 1]
         if count[i] >= i:
             return i
     return 0
