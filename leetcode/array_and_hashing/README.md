@@ -12,3 +12,4 @@
 10. [Heaters](heaters.py)
 11. [Summary Ranges](summary_ranges.py)
 12. [Magical String](magical_string.py)
+13. [H-Index](h_index.py)
