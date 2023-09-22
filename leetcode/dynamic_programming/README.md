@@ -10,3 +10,5 @@
 8. [Unique Paths](unique_paths.py)
 9. [Climbing Stairs](climbing_stairs.py)
 10. [Min Cost Climbing Stairs](min_cost_climbing_stairs.py)
+11. [House Robber](house_robber.py)
+12. [House Robber II](house_robber_ii.py)
