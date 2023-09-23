@@ -13,3 +13,4 @@
 11. [Summary Ranges](summary_ranges.py)
 12. [Magical String](magical_string.py)
 13. [H-Index](h_index.py)
+14. [License Key Formatting](license_key_formatting.py)
