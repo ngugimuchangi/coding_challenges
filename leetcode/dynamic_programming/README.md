@@ -13,3 +13,4 @@
 11. [House Robber](house_robber.py)
 12. [House Robber II](house_robber_ii.py)
 13. [Longest Palindromic Substring](longest_palindromic_substring.py)
+14. [Palindromic Substrings](palindromic_substrings.py)
